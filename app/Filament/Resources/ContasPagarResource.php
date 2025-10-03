@@ -228,6 +228,7 @@ class ContasPagarResource extends Resource
                     ->summarize(Sum::make()->money('BRL')->label('Total Pago'))
                     ->badge()
                     ->color('success')
+                    ->money('BRL')
                     ->label('Valor Pago'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()

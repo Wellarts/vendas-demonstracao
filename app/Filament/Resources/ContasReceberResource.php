@@ -223,6 +223,7 @@ class ContasReceberResource extends Resource
                 Tables\Columns\TextColumn::make('valor_recebido')
                     ->summarize(Sum::make()->money('BRL')->label('Total Pago'))
                     ->badge()
+                    ->money('BRL')          
                     ->color('success')
                     ->label('Valor Recebido'),
                 Tables\Columns\TextColumn::make('created_at')
